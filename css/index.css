@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5e6164;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293b;
 }
 h2 {
@@ -159,6 +159,18 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .navigation {
   display: flex;
@@ -166,6 +178,13 @@ p {
   align-items: center;
   background-color: #f6f6f6;
   padding: 20px 0;
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
 }
 .navigation nav {
   margin-top: 10px;
@@ -189,8 +208,21 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home {
+  margin-top: 98px;
+}
 .home .intro img {
   border-radius: 5px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 @media (max-width: 500px) {
   .home .intro img {
