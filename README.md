@@ -46,7 +46,7 @@ font-size: 62.5% will change the default px size from 16px to 10px, therefore ma
 
 4. How would you describe preprocessing to someone new to CSS?
 
-Peprocessing is an easier way to write and organize syntax for CSS written in a different language. That language is then compiled into normal CSS.
+Preprocessing is an easier way to write and organize syntax for CSS written in a different language. That language is then compiled into normal CSS.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
