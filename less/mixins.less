@@ -1,1 +1,40 @@
 // Mixins Here
+.sign-up
+  (@font-size, @border-radius, @padding, @text, @height, @width, @color, @bg-color) {
+  background-color: @bg-color;
+  color: @color;
+  height: @height;
+  width: @width;
+  text-align: @text;
+  padding: @padding;
+  border-radius: @border-radius;
+  font-size: @font-size;
+}
+
+.slidein() {
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+    }
+
+    to {
+      margin-left: 0%;
+    }
+  }
+}
+
+//animation-name: fadeInOpacity;
+//animation-iteration-count: 1;
+//animation-timing-function: ease-in;
+//animation-duration: 2s;
+
+.fadein() {
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
